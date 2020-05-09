@@ -94,9 +94,12 @@ books[2];
 
 // Write the code to access the number closest to two hundred, using bracket notation.
 
-belowTwoHundred[5];
+var biggestNum = Math.max(...belowTwoHundred);
+var bigIndex = belowTwoHundred.indexOf(biggestNum);
 
-//console.log(Math.max(...belowTwoHundred));
+belowTwoHundred[bigIndex];
+
+console.log(belowTwoHundred[bigIndex]);
 
 //------------------------- Objects -------------------------//
 
