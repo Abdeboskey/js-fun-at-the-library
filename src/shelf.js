@@ -5,11 +5,6 @@ function shelfBook(title, shelf) {
   }
 }
 
-// unshelfBook:
-// 1) create function that takes in a book's title, and the array in which that book is stored.
-// 2) search the array for an object that contains the property title: "Dune"
-// 3) remove that object from the array.
-
 function unshelfBook(bookTitle, shelf) {
   for (var i = 0; i < shelf.length; i++) {
     if (shelf[i].title.includes(bookTitle)) {
@@ -18,14 +13,10 @@ function unshelfBook(bookTitle, shelf) {
   }
 }
 
-// listTitles
-// 1) iterate through provided shelf
-// 2) add title of each book to array called titles
-
 function listTitles(shelf) {
   var shelfTitles = "";
   for (var i = 0; i < shelf.length; i++) {
-    if (i < shelf.length -1) {
+    if (i < (shelf.length -1)) {
       shelfTitles += shelf[i].title + ", ";
     } else {
       shelfTitles += shelf[i].title;

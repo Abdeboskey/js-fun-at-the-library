@@ -9,7 +9,7 @@ function buildMainCharacter(name, age, pronouns) {
 function saveReview(review, reviews) {
   if (!reviews.includes(review)) {
     reviews.push(review);
-  };
+  }
 };
 
 function calculatePageCount(bookTitle) {
@@ -17,15 +17,15 @@ function calculatePageCount(bookTitle) {
 };
 
 function writeBook(title, mainCharacter, genre) {
-  return {title, 
-          mainCharacter, 
-          pageCount: calculatePageCount(title), 
+  return {title,
+          mainCharacter,
+          pageCount: calculatePageCount(title),
           genre};
-}
+};
 
 function editBook(book) {
-  book.pageCount *= 0.75; 
-}
+  book.pageCount *= 0.75;
+};
 
 module.exports = {
   createTitle: createTitle,

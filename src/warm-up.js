@@ -68,7 +68,7 @@ if (pages < 1000) {
 // statement 'I recently read the [title] book'. In either case, the value stored in
 // the "title" variable should be included in the logged statement.
 
-if (isFavorite === true) {
+if (isFavorite) {
   console.log(`My favorite book is ${title}!`);
 } else {
   console.log(`I recently read ${title} book. It was alright. ${sequel} was better.`);
@@ -79,8 +79,8 @@ if (isFavorite === true) {
 
 // Create a new variable "books" and assign it to an Array of 5 different
 // book titles, represented by their names as Strings.
-var books = [ 'A Wizard of Earthsea', 'A Mind for Numbers', 'The Ethical Slut', 'Blue Horses', 'Even Cowgirls Get the Blues' ];
 
+var books = [ 'A Wizard of Earthsea', 'A Mind for Numbers', 'The Ethical Slut', 'Blue Horses', 'Even Cowgirls Get the Blues' ];
 
 // Write the code to access the 3rd element of the Array, using bracket
 // notation.
